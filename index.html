@@ -48,24 +48,5 @@
     </div>
     
     <script src="script.js"></script>
-    <script>
-        // Interacciones específicas para Página 1
-        window.addEventListener('DOMContentLoaded', function() {
-            // a. Mensaje de bienvenida
-            alert("¡Bienvenido a nuestro sitio web interactivo!");
-            
-            // b. Preguntar por el nombre
-            let userName = prompt("Por favor, ingresa tu nombre para personalizar tu experiencia:");
-            
-            // c. Dar la bienvenida al usuario
-            if(userName) {
-                alert(`¡Hola ${userName}! Bienvenido/a a nuestra página principal.`);
-                
-                // d. Mostrar el nombre en la página
-                document.getElementById('user-display').innerHTML = 
-                    `<p class="user-greeting">Hola, <span class="user-name">${userName}</span></p>`;
-            }
-        });
-    </script>
 </body>
 </html>
