@@ -1,9 +1,11 @@
+/* Importación de fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@300;400;600&family=Poppins:wght@300;400;500;600&family=Quicksand:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap');
+
 /* Estilos generales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -13,20 +15,25 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Paleta de colores para cada página */
+/* Página 1 - Azul con Montserrat */
 .pagina-azul {
     background: linear-gradient(135deg, #1e3c72, #2a5298, #3498db, #85c1e9);
     color: #333;
+    font-family: 'Montserrat', sans-serif;
 }
 
+/* Página 2 - Verde con Raleway */
 .pagina-verde {
     background: linear-gradient(135deg, #1d976c, #38ef7d, #93f9b9, #d1f7c4);
     color: #333;
+    font-family: 'Raleway', sans-serif;
 }
 
+/* Página 3 - Amarillo con Poppins */
 .pagina-amarilla {
     background: linear-gradient(135deg, #f9d423, #ffd700, #ffec8b, #fffacd);
     color: #333;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -59,25 +66,105 @@ header {
     border-bottom-color: #f39c12;
 }
 
-h1 {
+/* Estilos de tipografía específicos para cada página */
+
+/* Página 1 - Montserrat */
+.pagina-azul h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
     color: #2c3e50;
-    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    letter-spacing: -0.5px;
+}
+
+.pagina-azul h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 20px 0 15px;
+}
+
+.pagina-azul h3, .pagina-azul h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.pagina-azul p, .pagina-azul td, .pagina-azul th {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.pagina-azul .animated-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+/* Página 2 - Raleway */
+.pagina-verde h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    letter-spacing: 1px;
+}
+
+.pagina-verde h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 20px 0 15px;
+}
+
+.pagina-verde h3, .pagina-verde h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.pagina-verde p, .pagina-verde td, .pagina-verde th {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.pagina-verde .animated-btn {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Página 3 - Poppins */
+.pagina-amarilla h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: #2c3e50;
     margin-bottom: 15px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 
-h2 {
+.pagina-amarilla h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
     margin: 20px 0 15px;
-    font-size: 1.8rem;
 }
 
-h3 {
-    color: #2c3e50;
-    margin: 15px 0 10px;
+.pagina-amarilla h3, .pagina-amarilla h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
-h4 {
-    margin: 10px 0 5px;
+.pagina-amarilla p, .pagina-amarilla td, .pagina-amarilla th {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.pagina-amarilla .animated-btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 /* Colores de títulos según página */
@@ -108,7 +195,6 @@ h4 {
     color: white;
     text-decoration: none;
     border-radius: 50px;
-    font-weight: 600;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     position: relative;
@@ -413,9 +499,13 @@ h4 {
     .operations-table {
         font-size: 0.9rem;
     }
-}
     
-    .operations-table {
-        font-size: 0.9rem;
+    /* Ajustes de tipografía para móviles */
+    .pagina-azul h1, .pagina-verde h1, .pagina-amarilla h1 {
+        font-size: 2.2rem;
+    }
+    
+    .pagina-azul h2, .pagina-verde h2, .pagina-amarilla h2 {
+        font-size: 1.6rem;
     }
 }
