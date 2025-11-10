@@ -1,7 +1,7 @@
 /* Importación de fuentes de Google */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* Estilos generales */
+/* Reset y base */
 * {
     margin: 0;
     padding: 0;
@@ -10,24 +10,22 @@
 }
 
 body {
-    background: linear-gradient(135deg, #f9d423, #ffd700, #ffec8b, #fffacd);
-    color: #333;
+    background: linear-gradient(135deg, #f9d423, #ffd700, #ffec8b);
     min-height: 100vh;
     padding: 20px;
     line-height: 1.6;
-    font-family: 'Poppins', sans-serif;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     padding: 30px;
-    overflow: hidden;
 }
 
+/* Header y títulos */
 header {
     text-align: center;
     margin-bottom: 30px;
@@ -36,16 +34,13 @@ header {
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 2.5rem;
     color: #2c3e50;
     margin-bottom: 15px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 
 h2 {
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.8rem;
     color: #f39c12;
@@ -53,25 +48,18 @@ h2 {
 }
 
 h3 {
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: #2c3e50;
     margin: 15px 0 10px;
 }
 
 h4 {
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: #f39c12;
     margin: 10px 0 5px;
 }
 
-p, td, th {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
-
-/* Botones animados */
+/* Navegación */
 .button-container {
     display: flex;
     justify-content: center;
@@ -81,28 +69,19 @@ p, td, th {
 }
 
 .animated-btn {
-    display: inline-block;
     padding: 12px 25px;
     background: linear-gradient(45deg, #f39c12, #e67e22);
     color: white;
     text-decoration: none;
     border-radius: 50px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
 }
 
 .animated-btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(45deg, #e67e22, #f39c12);
-}
-
-.animated-btn:active {
-    transform: translateY(0);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Página Principal */
@@ -110,7 +89,6 @@ p, td, th {
     font-size: 1.2rem;
     margin: 15px 0;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
 }
 
 .user-name {
@@ -122,33 +100,22 @@ p, td, th {
     text-align: center;
     margin: 25px 0;
     padding: 20px;
-    background-color: #fef9e7;
+    background: #fef9e7;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-family: 'Poppins', sans-serif;
-}
-
-.pages-description {
-    margin-top: 30px;
 }
 
 .page-info {
-    background-color: #fef9e7;
+    background: #fef9e7;
     padding: 15px;
     border-radius: 8px;
     margin: 15px 0;
     border-left: 4px solid #f39c12;
-    font-family: 'Poppins', sans-serif;
 }
 
-/* Página 2 - Galería */
-.gallery {
-    text-align: center;
-}
-
+/* Galería */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
@@ -162,44 +129,30 @@ p, td, th {
 }
 
 .image-item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 .image-item img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
-    display: block;
 }
 
 .image-item p {
     padding: 10px;
-    background-color: #2c3e50;
+    background: #2c3e50;
     color: white;
     margin: 0;
     font-weight: 500;
-    font-family: 'Poppins', sans-serif;
 }
 
-/* Animaciones para imágenes */
+/* Animaciones esenciales */
 .animation-1:hover img {
     animation: rotate 2s linear infinite;
 }
 
 .animation-2:hover img {
-    animation: scale 1.5s ease-in-out infinite alternate;
-}
-
-.animation-3:hover img {
-    animation: slide 2s ease-in-out infinite alternate;
-}
-
-.animation-4:hover img {
-    animation: fade 2s ease-in-out infinite alternate;
-}
-
-.animation-5:hover img {
-    animation: combo 3s ease-in-out infinite;
+    transform: scale(1.05);
 }
 
 @keyframes rotate {
@@ -207,54 +160,22 @@ p, td, th {
     to { transform: rotate(360deg); }
 }
 
-@keyframes scale {
-    from { transform: scale(1); }
-    to { transform: scale(1.1); }
-}
-
-@keyframes slide {
-    from { transform: translateX(0); }
-    to { transform: translateX(10px); }
-}
-
-@keyframes fade {
-    from { opacity: 1; }
-    to { opacity: 0.7; }
-}
-
-@keyframes combo {
-    0% { transform: scale(1) rotate(0); }
-    50% { transform: scale(1.05) rotate(5deg); }
-    100% { transform: scale(1) rotate(0); }
-}
-
-/* Mensaje de acceso denegado */
+/* Acceso denegado */
 .access-denied {
     text-align: center;
     padding: 40px 20px;
-    font-family: 'Poppins', sans-serif;
 }
 
 .denied-message {
-    background-color: #f8d7da;
+    background: #f8d7da;
     border: 1px solid #f5c6cb;
     border-radius: 10px;
     padding: 30px;
     margin: 20px 0;
     color: #721c24;
-    font-family: 'Poppins', sans-serif;
 }
 
-.denied-message p {
-    margin: 10px 0;
-    font-size: 1.1rem;
-}
-
-/* Página 3 - Calculadora */
-.calculator {
-    text-align: center;
-}
-
+/* Calculadora */
 .operations-table {
     width: 100%;
     border-collapse: collapse;
@@ -262,7 +183,6 @@ p, td, th {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
-    font-family: 'Poppins', sans-serif;
 }
 
 .operations-table th, .operations-table td {
@@ -272,56 +192,39 @@ p, td, th {
 }
 
 .operations-table th {
-    background-color: #f39c12;
+    background: #f39c12;
     color: white;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
 }
 
 .operations-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.operations-table tr:hover {
-    background-color: #fef9e7;
-}
-
-.animated-header {
-    animation: colorChange 3s infinite alternate;
-}
-
-@keyframes colorChange {
-    0% { background-color: #f39c12; }
-    50% { background-color: #e67e22; }
-    100% { background-color: #d35400; }
+    background: #f8f9fa;
 }
 
 .calc-btn {
     padding: 8px 15px;
-    background-color: #e67e22;
+    background: #e67e22;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .calc-btn:hover {
-    background-color: #d35400;
+    background: #d35400;
     transform: scale(1.05);
 }
 
 .result-display {
     margin-top: 20px;
     padding: 15px;
-    background-color: #fef9e7;
+    background: #fef9e7;
     border-radius: 8px;
     border-left: 4px solid #f39c12;
     font-size: 1.2rem;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
 }
 
 /* Responsive */
@@ -340,15 +243,11 @@ p, td, th {
     }
     
     .animated-btn {
-        width: 80%;
+        width: 100%;
         text-align: center;
     }
     
     .image-grid {
         grid-template-columns: 1fr;
-    }
-    
-    .operations-table {
-        font-size: 0.9rem;
     }
 }
