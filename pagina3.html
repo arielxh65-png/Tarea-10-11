@@ -58,58 +58,5 @@
     </div>
     
     <script src="script.js"></script>
-    <script>
-        // Funciones para la calculadora
-        function multiplicar() {
-            let num1 = parseFloat(prompt("Ingresa el primer número para multiplicar:"));
-            let num2 = parseFloat(prompt("Ingresa el segundo número para multiplicar:"));
-            
-            if(!isNaN(num1) && !isNaN(num2)) {
-                let resultado = num1 * num2;
-                document.getElementById('resultado').innerHTML = 
-                    `<p>El resultado de ${num1} × ${num2} = ${resultado}</p>`;
-            } else {
-                alert("Por favor ingresa números válidos.");
-            }
-        }
-        
-        function elevarCuadrado() {
-            let num = parseFloat(prompt("Ingresa un número para elevarlo al cuadrado:"));
-            
-            if(!isNaN(num)) {
-                let resultado = num * num;
-                document.getElementById('resultado').innerHTML = 
-                    `<p>El resultado de ${num}² = ${resultado}</p>`;
-            } else {
-                alert("Por favor ingresa un número válido.");
-            }
-        }
-        
-        function restar() {
-            let num1 = parseFloat(prompt("Ingresa el primer número para restar:"));
-            let num2 = parseFloat(prompt("Ingresa el segundo número para restar:"));
-            
-            if(!isNaN(num1) && !isNaN(num2)) {
-                let resultado = num1 - num2;
-                document.getElementById('resultado').innerHTML = 
-                    `<p>El resultado de ${num1} - ${num2} = ${resultado}</p>`;
-            } else {
-                alert("Por favor ingresa números válidos.");
-            }
-        }
-        
-        function sumar() {
-            let num1 = parseFloat(prompt("Ingresa el primer número para sumar:"));
-            let num2 = parseFloat(prompt("Ingresa el segundo número para sumar:"));
-            
-            if(!isNaN(num1) && !isNaN(num2)) {
-                let resultado = num1 + num2;
-                document.getElementById('resultado').innerHTML = 
-                    `<p>El resultado de ${num1} + ${num2} = ${resultado}</p>`;
-            } else {
-                alert("Por favor ingresa números válidos.");
-            }
-        }
-    </script>
 </body>
 </html>
