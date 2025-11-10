@@ -1,38 +1,20 @@
 /* Importación de fuentes de Google */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@300;400;600&family=Poppins:wght@300;400;500;600&family=Quicksand:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* Estilos generales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
+    background: linear-gradient(135deg, #f9d423, #ffd700, #ffec8b, #fffacd);
+    color: #333;
     min-height: 100vh;
     padding: 20px;
     line-height: 1.6;
-    transition: all 0.3s ease;
-}
-
-/* Página 1 - Azul con Montserrat */
-.pagina-azul {
-    background: linear-gradient(135deg, #1e3c72, #2a5298, #3498db, #85c1e9);
-    color: #333;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Página 2 - Verde con Raleway */
-.pagina-verde {
-    background: linear-gradient(135deg, #1d976c, #38ef7d, #93f9b9, #d1f7c4);
-    color: #333;
-    font-family: 'Raleway', sans-serif;
-}
-
-/* Página 3 - Amarillo con Poppins */
-.pagina-amarilla {
-    background: linear-gradient(135deg, #f9d423, #ffd700, #ffec8b, #fffacd);
-    color: #333;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -50,134 +32,43 @@ header {
     text-align: center;
     margin-bottom: 30px;
     padding-bottom: 20px;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid #f39c12;
 }
 
-/* Colores de borde según la página */
-.pagina-azul header {
-    border-bottom-color: #3498db;
-}
-
-.pagina-verde header {
-    border-bottom-color: #27ae60;
-}
-
-.pagina-amarilla header {
-    border-bottom-color: #f39c12;
-}
-
-/* Estilos de tipografía específicos para cada página */
-
-/* Página 1 - Montserrat */
-.pagina-azul h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 2.8rem;
-    color: #2c3e50;
-    margin-bottom: 15px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-    letter-spacing: -0.5px;
-}
-
-.pagina-azul h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    margin: 20px 0 15px;
-}
-
-.pagina-azul h3, .pagina-azul h4 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-}
-
-.pagina-azul p, .pagina-azul td, .pagina-azul th {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-}
-
-.pagina-azul .animated-btn {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-}
-
-/* Página 2 - Raleway */
-.pagina-verde h1 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 2.8rem;
-    color: #2c3e50;
-    margin-bottom: 15px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-    letter-spacing: 1px;
-}
-
-.pagina-verde h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 2rem;
-    margin: 20px 0 15px;
-}
-
-.pagina-verde h3, .pagina-verde h4 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-}
-
-.pagina-verde p, .pagina-verde td, .pagina-verde th {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-}
-
-.pagina-verde .animated-btn {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-/* Página 3 - Poppins */
-.pagina-amarilla h1 {
+h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     color: #2c3e50;
     margin-bottom: 15px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 
-.pagina-amarilla h2 {
+h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 2rem;
-    margin: 20px 0 15px;
-}
-
-.pagina-amarilla h3, .pagina-amarilla h4 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-}
-
-.pagina-amarilla p, .pagina-amarilla td, .pagina-amarilla th {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
-
-.pagina-amarilla .animated-btn {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-}
-
-/* Colores de títulos según página */
-.pagina-azul h2, .pagina-azul h4 {
-    color: #2980b9;
-}
-
-.pagina-verde h2, .pagina-verde h4 {
-    color: #27ae60;
-}
-
-.pagina-amarilla h2, .pagina-amarilla h4 {
+    font-size: 1.8rem;
     color: #f39c12;
+    margin: 20px 0 15px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #2c3e50;
+    margin: 15px 0 10px;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #f39c12;
+    margin: 10px 0 5px;
+}
+
+p, td, th {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 /* Botones animados */
@@ -192,42 +83,21 @@ header {
 .animated-btn {
     display: inline-block;
     padding: 12px 25px;
+    background: linear-gradient(45deg, #f39c12, #e67e22);
     color: white;
     text-decoration: none;
     border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
 
-/* Colores de botones según página */
-.pagina-azul .animated-btn {
-    background: linear-gradient(45deg, #3498db, #2980b9);
-}
-
-.pagina-verde .animated-btn {
-    background: linear-gradient(45deg, #27ae60, #229954);
-}
-
-.pagina-amarilla .animated-btn {
-    background: linear-gradient(45deg, #f39c12, #e67e22);
-}
-
 .animated-btn:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.pagina-azul .animated-btn:hover {
-    background: linear-gradient(45deg, #2980b9, #3498db);
-}
-
-.pagina-verde .animated-btn:hover {
-    background: linear-gradient(45deg, #229954, #27ae60);
-}
-
-.pagina-amarilla .animated-btn:hover {
     background: linear-gradient(45deg, #e67e22, #f39c12);
 }
 
@@ -240,20 +110,22 @@ header {
     font-size: 1.2rem;
     margin: 15px 0;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .user-name {
     color: #e74c3c;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .description {
     text-align: center;
     margin: 25px 0;
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: #fef9e7;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
 }
 
 .pages-description {
@@ -261,25 +133,12 @@ header {
 }
 
 .page-info {
+    background-color: #fef9e7;
     padding: 15px;
     border-radius: 8px;
     margin: 15px 0;
-    border-left: 4px solid;
-}
-
-.pagina-azul .page-info {
-    background-color: #e8f4fc;
-    border-left-color: #3498db;
-}
-
-.pagina-verde .page-info {
-    background-color: #e8f8ef;
-    border-left-color: #27ae60;
-}
-
-.pagina-amarilla .page-info {
-    background-color: #fef9e7;
-    border-left-color: #f39c12;
+    border-left: 4px solid #f39c12;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Página 2 - Galería */
@@ -319,6 +178,7 @@ header {
     color: white;
     margin: 0;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Animaciones para imágenes */
@@ -372,6 +232,7 @@ header {
 .access-denied {
     text-align: center;
     padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .denied-message {
@@ -381,6 +242,7 @@ header {
     padding: 30px;
     margin: 20px 0;
     color: #721c24;
+    font-family: 'Poppins', sans-serif;
 }
 
 .denied-message p {
@@ -400,6 +262,7 @@ header {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 .operations-table th, .operations-table td {
@@ -409,13 +272,10 @@ header {
 }
 
 .operations-table th {
+    background-color: #f39c12;
     color: white;
     font-weight: 600;
-}
-
-/* Colores de tabla según página */
-.pagina-amarilla .operations-table th {
-    background-color: #f39c12;
+    font-family: 'Poppins', sans-serif;
 }
 
 .operations-table tr:nth-child(even) {
@@ -423,7 +283,7 @@ header {
 }
 
 .operations-table tr:hover {
-    background-color: #e8f4fc;
+    background-color: #fef9e7;
 }
 
 .animated-header {
@@ -438,38 +298,30 @@ header {
 
 .calc-btn {
     padding: 8px 15px;
+    background-color: #e67e22;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 
-.pagina-amarilla .calc-btn {
-    background-color: #e67e22;
-}
-
 .calc-btn:hover {
-    transform: scale(1.05);
-}
-
-.pagina-amarilla .calc-btn:hover {
     background-color: #d35400;
+    transform: scale(1.05);
 }
 
 .result-display {
     margin-top: 20px;
     padding: 15px;
+    background-color: #fef9e7;
     border-radius: 8px;
-    border-left: 4px solid;
+    border-left: 4px solid #f39c12;
     font-size: 1.2rem;
     font-weight: 600;
-}
-
-.pagina-amarilla .result-display {
-    background-color: #fef9e7;
-    border-left-color: #f39c12;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Responsive */
@@ -499,13 +351,5 @@ header {
     .operations-table {
         font-size: 0.9rem;
     }
-    
-    /* Ajustes de tipografía para móviles */
-    .pagina-azul h1, .pagina-verde h1, .pagina-amarilla h1 {
-        font-size: 2.2rem;
-    }
-    
-    .pagina-azul h2, .pagina-verde h2, .pagina-amarilla h2 {
-        font-size: 1.6rem;
-    }
+}
 }
