@@ -18,66 +18,10 @@
         </header>
         
         <main id="contenido-pagina">
-            <!-- El contenido se mostrará solo si la edad es mayor a 20 -->
+            <!-- El contenido se cargará dinámicamente desde script.js -->
         </main>
     </div>
     
     <script src="script.js"></script>
-    <script>
-        // Interacciones específicas para Página 2
-        window.addEventListener('DOMContentLoaded', function() {
-            // a. Mensaje de bienvenida
-            alert("¡Bienvenido a nuestra galería de imágenes!");
-            
-            // b. Preguntar por la edad y verificar acceso
-            let userAge = prompt("Para acceder a la galería, por favor ingresa tu edad:");
-            const contenido = document.getElementById('contenido-pagina');
-            
-            if(userAge && parseInt(userAge) > 20) {
-                // Mostrar galería si es mayor de 20
-                contenido.innerHTML = `
-                    <section class="gallery">
-                        <h2>Nuestra Galería</h2>
-                        <div class="image-grid">
-                            <div class="image-item animation-1">
-                                <img src="https://picsum.photos/300/200?random=1" alt="Imagen 1">
-                                <p>Animación de Rotación</p>
-                            </div>
-                            <div class="image-item animation-2">
-                                <img src="https://picsum.photos/300/200?random=2" alt="Imagen 2">
-                                <p>Animación de Escala</p>
-                            </div>
-                            <div class="image-item animation-3">
-                                <img src="https://picsum.photos/300/200?random=3" alt="Imagen 3">
-                                <p>Animación de Desplazamiento</p>
-                            </div>
-                            <div class="image-item animation-4">
-                                <img src="https://picsum.photos/300/200?random=4" alt="Imagen 4">
-                                <p>Animación de Opacidad</p>
-                            </div>
-                            <div class="image-item animation-5">
-                                <img src="https://picsum.photos/300/200?random=5" alt="Imagen 5">
-                                <p>Animación Combinada</p>
-                            </div>
-                        </div>
-                    </section>
-                `;
-                alert("¡Acceso concedido! Disfruta de nuestra galería.");
-            } else {
-                // Mostrar mensaje de acceso denegado
-                contenido.innerHTML = `
-                    <section class="access-denied">
-                        <h2>Acceso Restringido</h2>
-                        <div class="denied-message">
-                            <p>Lo sentimos, no cumples con la edad mínima requerida para acceder a esta galería.</p>
-                            <p>Debes ser mayor de 20 años para ver las imágenes.</p>
-                            <p>Tu edad ingresada: <strong>${userAge || 'No especificada'}</strong></p>
-                        </div>
-                    </section>
-                `;
-                alert("Acceso denegado. Debes ser mayor de 20 años para ver la galería.");
-            }
-        });
-    </script>
 </body>
 </html>
