@@ -5,6 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería de Imágenes</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Animaciones específicas para la galería */
+        .animation-1:hover img {
+            animation: rotate3D 2s ease-in-out infinite;
+        }
+        
+        .animation-2:hover img {
+            animation: pulseScale 1.5s ease-in-out infinite alternate;
+        }
+        
+        .animation-3:hover img {
+            animation: slideBounce 2s ease-in-out infinite;
+        }
+        
+        .animation-4:hover img {
+            animation: fadeBlur 2s ease-in-out infinite alternate;
+        }
+        
+        .animation-5:hover img {
+            animation: shakeTilt 1s ease-in-out infinite;
+        }
+        
+        @keyframes rotate3D {
+            0% { transform: perspective(1000px) rotateY(0deg); }
+            50% { transform: perspective(1000px) rotateY(180deg); }
+            100% { transform: perspective(1000px) rotateY(360deg); }
+        }
+        
+        @keyframes pulseScale {
+            0% { transform: scale(1); filter: brightness(1); }
+            100% { transform: scale(1.1); filter: brightness(1.2); }
+        }
+        
+        @keyframes slideBounce {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+        
+        @keyframes fadeBlur {
+            0% { opacity: 1; filter: blur(0px); }
+            100% { opacity: 0.8; filter: blur(2px); }
+        }
+        
+        @keyframes shakeTilt {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-5deg); }
+            75% { transform: rotate(5deg); }
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -18,7 +74,6 @@
         </header>
         
         <main id="contenido-pagina">
-            <!-- El contenido se cargará dinámicamente desde script.js -->
             <div class="loading">
                 <p>Cargando galería...</p>
             </div>
