@@ -215,4 +215,4 @@ document.addEventListener('DOMContentLoaded', function() {
 // Función auxiliar para validar números
 function esNumeroValido(valor) {
     return !isNaN(parseFloat(valor)) && isFinite(valor);
-                                              }
+}
