@@ -12,7 +12,7 @@
             <h1>Calculadora de Operaciones</h1>
             <div class="button-container">
                 <a href="index.html" class="animated-btn">Página Principal</a>
-                <a href="pagina2.html" class="animated-btn">Galería</a>
+                <a href="pagina2.html" class="animated-btn">Galería de Imágenes</a>
                 <a href="pagina3.html" class="animated-btn">Calculadora</a>
             </div>
         </header>
@@ -23,31 +23,31 @@
                 <table class="operations-table">
                     <thead>
                         <tr>
-                            <th>OPERACIÓN</th>
-                            <th>DESCRIPCIÓN</th>
-                            <th>BOTONES</th>
+                            <th class="animated-header">OPERACIÓN</th>
+                            <th class="animated-header">DESCRIPCIÓN</th>
+                            <th class="animated-header">BOTONES</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>MULTIPLICACIÓN</td>
-                            <td>Multiplica 2 números</td>
-                            <td><button class="calc-btn" onclick="calcularOperacion('multiplicar')">CALCULAR</button></td>
+                            <td>Multiplica 2 números ingresados</td>
+                            <td><button class="calc-btn" onclick="multiplicar()">CALCULAR</button></td>
                         </tr>
                         <tr>
                             <td>EXPONENTE 2</td>
-                            <td>Eleva al cuadrado</td>
-                            <td><button class="calc-btn" onclick="calcularOperacion('cuadrado')">CALCULAR</button></td>
+                            <td>Eleva al cuadrado 1 número ingresado</td>
+                            <td><button class="calc-btn" onclick="elevarCuadrado()">CALCULAR</button></td>
                         </tr>
                         <tr>
                             <td>RESTA</td>
-                            <td>Resta 2 números</td>
-                            <td><button class="calc-btn" onclick="calcularOperacion('restar')">CALCULAR</button></td>
+                            <td>Resta 2 números ingresados</td>
+                            <td><button class="calc-btn" onclick="restar()">CALCULAR</button></td>
                         </tr>
                         <tr>
                             <td>SUMA</td>
-                            <td>Suma 2 números</td>
-                            <td><button class="calc-btn" onclick="calcularOperacion('sumar')">CALCULAR</button></td>
+                            <td>Suma 2 números ingresados</td>
+                            <td><button class="calc-btn" onclick="sumar()">CALCULAR</button></td>
                         </tr>
                     </tbody>
                 </table>
